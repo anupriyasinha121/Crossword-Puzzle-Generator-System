@@ -1,0 +1,38 @@
+
+\documentclass[12pt,a4paper]{report}
+\usepackage{comment, lastpage, amssymb, url, fancyhdr, multirow, framed, enumitem}
+\usepackage[pdftex]{graphicx} 
+\usepackage[a4paper, left=1.6cm, right=1.6cm, top=2.5cm, bottom=2.8cm]{geometry}
+
+\pagestyle{fancy}
+\rhead{}
+\lhead{B Tech $4^{th}$ Semester}
+\chead{}
+\cfoot{}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
+%\lfoot{Tuesday, 21 April 2018}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\setlist[enumerate]{noitemsep, nosep, topsep=0pt}
+\setlist[description]{noitemsep, nosep, topsep=0pt}
+
+
+\begin{document}
+\thispagestyle{empty}
+\input{./title.tex}
+
+%\pagenumbering{roman} %numbering before main content starts
+%\tableofcontents
+%\listoffigures
+
+\newpage
+
+\input{./introduction.tex} 
+\input{./architecture.tex}
+\input{./workdone.tex}
+\input{./testing.tex}
+\input{./conclusion.tex}
+
+
+\end{document}
